@@ -1,5 +1,5 @@
 name: BungeeRelay
-version: 1.1
-author: phy1729, Dead-i, maldridge, siosilvar
+version: 1.1.1
+author: phy1729, Dead-i, maldridge, siosilvar, NoTrebel
 main: org.collegiumv.BungeeRelay.Main
 depends: []

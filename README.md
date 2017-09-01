@@ -12,4 +12,6 @@ The plugin makes use of Maven to enable fast and easy compiling. If you wish to 
 
 Licence
 -------
+
 This plugin and its source code is licenced under the ISC License.
+

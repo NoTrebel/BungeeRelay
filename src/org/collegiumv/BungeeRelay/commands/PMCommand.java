@@ -1,7 +1,8 @@
 package org.collegiumv.BungeeRelay.commands;
 
-import org.collegiumv.BungeeRelay.IRC;
-import org.collegiumv.BungeeRelay.Util;
+import io.github.dead_i.bungeerelay.BungeeRelay;
+import io.github.dead_i.bungeerelay.IRC;
+import io.github.dead_i.bungeerelay.Util;
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.chat.TextComponent;
@@ -38,7 +39,7 @@ public class PMCommand extends Command {
         for (String a : list) msg.append(a).append(" ");
         IRC.out.println(":" + IRC.players.get(sender).id + " PRIVMSG " + uid + " :" + msg);
         IRC.replies.put((ProxiedPlayer) sender, args[0]);
-        sender.sendMessage(new TextComponent(ChatColor.translateAlternateColorCodes('&', IRC.config.getString("formats.privatemsg")
+        sender.sendMessage(new TextComponent(ChatColor.translateAlternateColorCodes('&', BungeeRelay.getConfig().getString("formats.privatemsg")
                 .replace("{SENDER}", sender.getName())
                 .replace("{MESSAGE}", msg))));
     }
